@@ -18,6 +18,7 @@ package h2go
 
 import (
 	"net"
+	// "github.com/alphahorizonio/tinynet/pkg/tinynet"
 
 	log "github.com/sirupsen/logrus"
 

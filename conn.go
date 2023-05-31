@@ -21,7 +21,9 @@ import (
 	"database/sql/driver"
 	"fmt"
 
-	"net"
+	"github.com/alphahorizonio/tinynet/pkg/tinynet"
+
+	//"net"
 
 	log "github.com/sirupsen/logrus"
 
@@ -138,10 +140,11 @@ func (h2c *h2Conn) ExecContext(ctx context.Context, query string, args []driver.
 // Specific code
 
 func connect(ci h2connInfo) (driver.Conn, error) {
-	var conn net.Conn
+	var conn tinynet.Conn
 	var err error
 	address := fmt.Sprintf("%s:%d", ci.host, ci.port)
-	conn, err = ci.dialer.Dial("tcp", address)
+	// conn, err = ci.dialer.Dial("tcp", address)
+	conn, err = tinynet.Dial("tcp", address)
 	if err != nil {
 		return nil, errors.Wrapf(err, "failed to open H2 connection")
 	}

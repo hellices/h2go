@@ -20,9 +20,10 @@ import (
 	"bufio"
 	"encoding/binary"
 	"fmt"
-	"net"
 	"time"
 	"unsafe"
+
+	"github.com/alphahorizonio/tinynet/pkg/tinynet"
 
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
@@ -64,11 +65,11 @@ const (
 )
 
 type transfer struct {
-	conn net.Conn
+	conn tinynet.Conn
 	buff *bufio.ReadWriter
 }
 
-func newTransfer(conn net.Conn) transfer {
+func newTransfer(conn tinynet.Conn) transfer {
 
 	buffReader := bufio.NewReader(conn)
 	buffWriter := bufio.NewWriter(conn)

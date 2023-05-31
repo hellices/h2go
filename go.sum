@@ -1,3 +1,7 @@
+github.com/alphahorizonio/tinynet v0.0.0-20210118222949-4f531078f7e8 h1:tEvq7iqQ5+BDZr4JN+7Wv8GNLg5cCgYdpCXSTvndPE8=
+github.com/alphahorizonio/tinynet v0.0.0-20210118222949-4f531078f7e8/go.mod h1:0dKCYogxMb7VP7L/P2pauztI39BgzjQ/Y1QIkljNYi0=
+github.com/alphahorizonio/unisockets v0.1.1 h1:LNR3Uy+xm09zlj0QGlrDw2ljF80/4J/nbfvpqBeXSpM=
+github.com/alphahorizonio/unisockets v0.1.1/go.mod h1:GHmI67/4EW9Jx+d1QiytJOHXnlI127uErrRgIHzwBB4=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/konsorten/go-windows-terminal-sequences v1.0.1 h1:mweAR1A6xJ3oS2pRaGiHgQ4OO8tzTaLawm8vnODuwDk=
@@ -11,6 +15,7 @@ github.com/sirupsen/logrus v1.4.2/go.mod h1:tLMulIdttU9McNUspp0xgXVQah82FyeX6Mwd
 github.com/stretchr/objx v0.1.1/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.2.2 h1:bSDNvY7ZPG5RlJ8otE/7V6gMiyenm9RtJ7IUVIAoJ1w=
 github.com/stretchr/testify v1.2.2/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXfy6kDkUVs=
+github.com/valyala/fastjson v1.6.3/go.mod h1:CLCAqky6SMuOcxStkYQvblddUtoRxhYMGLrsQns1aXY=
 golang.org/x/sys v0.0.0-20190422165155-953cdadca894 h1:Cz4ceDQGXuKRnVBDTS23GTn/pU5OE2C0WrNTOYK1Uuc=
 golang.org/x/sys v0.0.0-20190422165155-953cdadca894/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/text v0.3.2 h1:tW2bmiBqwgJj/UpqtC8EpXEZVYOwU0yG4iWbprSVAcs=

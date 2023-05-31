@@ -20,11 +20,12 @@ import (
 	"database/sql"
 	"fmt"
 	"log"
-	"net"
 	"os"
 	"strconv"
 	"testing"
 	"time"
+
+	"github.com/alphahorizonio/tinynet/pkg/tinynet"
 )
 
 // Using a testing pattern similar to Go MySQL Driver (https://github.com/go-sql-driver/mysql)
@@ -72,7 +73,7 @@ func init() {
 		dsn = fmt.Sprintf("h2://%s@%s/%s?mem=%t", user, addr, dbname, inMem)
 	}
 	// Check alive
-	c, err := net.Dial("tcp", addr)
+	c, err := tinynet.Dial("tcp", addr)
 	if err == nil {
 		available = true
 		c.Close()
